@@ -30,9 +30,31 @@
     "url": "https://github.com/qluwlh/ts-pit/issues"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@umijs/test": "^3.5.26",
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "dumi": "^1.0.13",
-    "lint-staged": "^10.0.7",
-    "prettier": "^2.2.1",
+    "eslint": "^8.18.0",
+    "eslint-config-soraka": "^0.1.0",
+    "fs-extra": "^10.1.0",
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4",
     "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
