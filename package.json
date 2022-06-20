@@ -24,7 +24,7 @@
     ]
   },
   "homepage": "https://github.com/qluwlh/ts-pit",
-  "repository": "https://github.com/qluwlh/ts-pit",
+  "repository": "https://github.com/qluwlh/ts-pit.git",
   "author": "wanglihua <lihua.only@gamil.com>",
   "bugs": {
     "url": "https://github.com/qluwlh/ts-pit/issues"
