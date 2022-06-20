@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "dumi-app",
+  "name": "ts-pit",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
