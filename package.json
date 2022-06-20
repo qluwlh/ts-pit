@@ -3,7 +3,10 @@
   "name": "dumi-app",
   "scripts": {
     "start": "dumi dev",
-    "build": "dumi build",
+    "docs:build": "dumi build",
+    "docs:deploy": "yarn docs:build && yarn gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
   },
   "main": "dist/index.js",
@@ -19,6 +22,12 @@
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
     ]
+  },
+  "homepage": "https://github.com/qluwlh/ts-pit",
+  "repository": "https://github.com/qluwlh/ts-pit",
+  "author": "wanglihua <lihua.only@gamil.com>",
+  "bugs": {
+    "url": "https://github.com/qluwlh/ts-pit/issues"
   },
   "devDependencies": {
     "dumi": "^1.0.13",
