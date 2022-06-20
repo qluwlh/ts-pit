@@ -1,5 +1,5 @@
 ---
-title: day01-值和类型
+title: 值和类型
 nav:
   title: 开始
   path: /day
@@ -13,7 +13,9 @@ group:
 
 > \*\*\* only refers to a type, but is being used as a value here. ts(2693)
 
-错误的原因是我们把类型当作值来使用了，先来了解两个基本概念： 值和类型
+在 TypeScript 中，多数时候，我们要表达的是值或者类型，这个错误的原因是我们把类型当作值来使用了。
+
+先来了解两个基本概念： **值和类型**
 
 ## 值
 
@@ -67,9 +69,30 @@ const add: Add = (a, b) => {
 };
 ```
 
+## 命名空间
+
+在 TypeScript 中，类型和值位于不同的命名空间中。TypeScript 可以自动推断使用的是值还是类型
+
+```ts
+// 值
+let age = 18;
+function add() {}
+
+//类型
+type age = number;
+interface add {
+  (): void;
+}
+
+//自动推断
+if (age > 19) {
+  let tom: age = 20;
+}
+```
+
 ## 常见错误
 
-把值和类型混用
+值和类型错用
 
 ### 把类型当作值来使用
 
@@ -87,9 +110,9 @@ if (currency instanceof Currency) {
 }
 ```
 
-## 两个例外
+## 两个特殊
 
-class 和 enum
+class 和 enum, 他们既在类型命名空间中生成类型，也在值命名空间中生成值
 
 ### class
 
