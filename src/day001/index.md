@@ -136,3 +136,17 @@ enum Color {
 
 const c1: Color = Color.blue;
 ```
+
+### 自己实现
+
+```ts
+interface Student {
+  name: string;
+}
+
+function Student(name: string): Student {
+  return { name };
+}
+
+const student: Student = Student('Tom');
+```
