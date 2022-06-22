@@ -14,13 +14,13 @@ const getStudentName = (s: Student): string => {
 getStudentName(s);
 
 const identity = <T>(value: T): T => value;
-identity(10);
 
-const addTen = (value: number): number => {
-  return value + 10;
-};
+const num = identity<number>(10);
+const str = identity<string>('10');
 
-addTen(identity(10));
+const addOne = (value: number) => value + 1;
+
+addOne(identity('1'));
 
 interface Res<T> {
   code: number;
@@ -36,3 +36,27 @@ type ListStudentsRes = Res<ListStudentsData>;
 type A = Promise<number>;
 
 const listStudents = async (): Promise<ListStudentsRes> => {};
+
+const a = {
+  code: 0,
+  msg: '',
+  data: {},
+};
+
+interface CommonResponse<T> {
+  code: number;
+  msg: '';
+  data: T;
+}
+
+interface GetStudentResponseData {
+  name: string;
+  age: number;
+}
+
+interface GetSchoolResponseData {
+  id: number;
+}
+
+type GetStudentResponse = CommonResponse<GetStudentResponseData>;
+type GetSchoolResponse = CommonResponse<GetSchoolResponseData>;
