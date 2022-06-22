@@ -2,10 +2,10 @@
 title: 值和类型
 nav:
   title: 开始
-  path: /day
+  path: /main
 group:
-  title: 常见错误
-  path: /pit
+  title: 每日更新
+  path: /day
   order: 1
 ---
 

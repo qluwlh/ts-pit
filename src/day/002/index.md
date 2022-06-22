@@ -2,10 +2,10 @@
 title: 泛型简介
 nav:
   title: 开始
-  path: /day
+  path: /main
 group:
   title: 每日更新
-  path: /pit
+  path: /day
   order: 2
 ---
 
