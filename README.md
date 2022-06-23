@@ -1,1 +1,2 @@
-easy to learn typescript
+TypeScript 学习过程答疑解惑，知识点分享
+**注意：目前教程不适合零基础的同学，需要先对概念有个大概的了解**

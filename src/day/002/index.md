@@ -72,7 +72,7 @@ addOne(identity('1'));
 const identity = <T>(value: T): T => value;
 ```
 
-我们把 any 换掉，现在是一个类型构造器而不是一个具体的类型，在使用的时候再去声明 T 的具体类型
+我们把 any 换掉，现在是一个类型构造器而不是一个具体的类型，在使用的时候再去声明 T 的具体类型，其中这里的 T 的我们可以用任何的字母， 像 U、VALUE 都是可以的
 
 ```ts
 const num = identity<number>(10);
