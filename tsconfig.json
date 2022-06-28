@@ -6,6 +6,7 @@
     "importHelpers": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "strictNullChecks": true,
     "sourceMap": true,
     "baseUrl": "./",
     "strict": true,

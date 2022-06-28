@@ -1,26 +1,34 @@
-type Not<T> = NonNullable<T>;
-
-const get = <T, K extends keyof T>(obj: T, key: K) => {
-  return obj[key];
+const log = (target: unknown) => {
+  console.log('target', target);
 };
 
-interface Name {
-  alias: string;
-  real: string;
+class People1<T> {
+  constructor(public name: T) {
+    this.name = name;
+  }
 }
 
-interface School {
-  id: number;
-  classes: number[];
-  name: Name;
+const p1 = new People1(1);
+if (p1 instanceof People1<number>) {
+  console.log('p1', p1);
 }
-const o1: School = {
-  id: 1,
-  classes: [1, 2, 2],
-  name: {
-    real: 'real',
-    alias: 'alias',
-  },
+
+function reverse(items) {
+  const res = [];
+  for (let i = items.length - 1; i >= 0; i--) {
+    res.push(items[i]);
+  }
+  return res;
+}
+class Queue {
+  private data = [];
+  push = (item) => this.data.push(item);
+  pop = () => this.data.shift();
+}
+
+const pick = (obj, keys) => {
+  return keys.reduce((res, key) => {
+    res[key] = obj[key];
+    return res;
+  }, {});
 };
-const ddd = o1.name;
-const b = get(o1, 'name');
