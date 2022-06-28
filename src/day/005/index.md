@@ -20,10 +20,12 @@ group:
 ## 类型总览
 
 - 先来看一下 TypeScript 的类型总览
-  <img src="./types.jpg" width="60%">
+
+<img src="./types.jpg" width="60%">
 
 - 可能的值
-  <img src="./types2.jpg" width="60%">
+
+<img src="./types2.jpg" width="60%">
 
 ## 基本类型
 
